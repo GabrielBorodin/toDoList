@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<meta charset="utf-8">
+<link rel="stylesheet" href="to-doCss.css" type="text/css"/>
+<body>
+<script src="to-doJS.js"></script>
+<div class ="allPositions">
+<div class="firstBlock">
+  <div class="leftFirstBlock">
+    <h2>Приоритет:</h2>
+    <select id="leftFirstBlock" name="leftFirstBlock">
+      <option disabled>Приоритет</option>
+      <option id="priorityHigh" value="Высокий">Высокий</option>
+      <option id="priorityMedium" value="Средний">Средний</option>
+      <option id="priorityLow" value="Низкий">Низкий</option>
+    </select>
+  </div>
+  <div class="centerFirstBlock">
+    <h2 class="left">Текст задачи:</h2>
+    <input type="text" placeholder = "Введите текст..." id="makeNewTask">
+  </div>
+  <div class="rightFirstBlock">
+    <button id="sendNewObjective" onclick="sendNewObjective()" >Добавить задачу</button>
+  </div>
+</div>
+<div class="secondBlock">
+  <div class="leftSecondBlock">
+    <div class="leftSecondBlock1">
+      <h3>Фильтр по приоритету:</h3>
+      <select style="width: 150px; height: 30px" onchange="filterPriority()" id="filterPriority">
+        <option id="fPriorityEvery">Любой</option>
+        <option id="fPriorityHigh">Высокий</option>
+        <option id="fPriorityMedium">Средний</option>
+        <option id="fPriorityLow">Низкий</option>
+      </select>
+    </div>
+    <div class="leftSecondBlock2">
+      <h3>Сортировка по дате:</h3>
+      <select style="width: 150px; height: 30px" class="leftSecondBlock2" onchange="sortDate()" id="sortDate">
+        <option id="dateNo">Нет</option>
+        <option id="dateFromNewToOld">От новых к старым</option>
+        <option id="dateFromOldToNew">От старых к новым</option>
+      </select>
+    </div>
+  </div>
+  <div class="rightSecondBlock">
+    <div class="rightSecondBlock1">
+      <h3>Фильтр по статусу:</h3>
+      <form>
+        <label>
+          <input type="checkbox" id="activeStatus" onclick="filterActiveStatusCheck()">
+          Активные</label>
+        <input type="checkbox" id="blockStatus" onclick="filterBlockStatusCheck()">
+        Отменённые</label>
+        <input type="checkbox" id="endStatus" onclick="filterEndStatusCheck()">
+        Завершёные</label>
+      </form>
+    </div>
+    <div class="rightSecondBlock2">
+      <h3>Сортировка по приоритету:</h3>
+      <select style="width: 150px; height: 30px" id="sortPriority" onchange="sortPriority()">
+        <option id="sortPriorityNo">Нет</option>
+        <option id="sortPriorityUp">Приоритет UP</option>
+        <option id="sortPriorityDown">Приоритет DOWN</option>
+      </select>
+    </div>
+  </div>
+</div>
+<div class="thirdBlock">
+  <h3>Поиск задачи по тексту:</h3>
+  <div class="centerThirdBlock">
+    <input type="text" style="width: 1200px; height: 30px"placeholder="Начните вводить текст задачи..." size = "70" id="searchTaskWithText" onchange='{(event)}'>
+  </div>
+</div>
+<div id="newBlocks" class="newBlocks"></div>
+</div>
+</body>
+</html>
