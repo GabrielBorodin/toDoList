@@ -1,0 +1,166 @@
+.allPositions { /*задаём расположение всех блоков по центру*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.firstBlock {
+  width: 1245px;
+  padding: 30px; /* Поля */
+  background: #F0E68C; /* Цвет фона */
+  border: 0px solid #271780; /* Параметры рамки */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  align-content: center;
+  margin-bottom: 30px;
+}
+.leftFirstBlock {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  padding: 0px 30px 0px 0px;
+}
+#leftFirstBlock{
+  font-size: 30px;
+  font-weight: 50;
+}
+.centerFirstBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+  width: 850px;
+  padding: 0px 60px 0px 0px;
+}
+#makeNewTask{
+  width: 870px;
+  font-size:30px;
+  font-weight: normal;
+}
+.rightFirstBlock {
+  display: flex;
+  justify-content: right;
+  align-self: flex-end;
+  height: 40px;
+  width: 300px;
+}
+.secondBlock {
+  width: 1280px;
+  padding: 15px; /* Поля */
+  background: #FAEBD7	; /* Цвет фона */
+  border: 0px solid #150472; /* Параметры рамки */
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+.leftSecondBlock {
+  display: flex;
+  flex-direction: column;
+}
+.leftSecondBlock1 {
+  display: inline-flex;
+  align-items: center;
+  width: 450px;
+  height: 80px;
+  justify-content: space-evenly;
+}
+.leftSecondBlock2 {
+  width: 450px;
+  height: 80px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.rightSecondBlock {
+  display: flex;
+  flex-direction: column;
+}
+.rightSecondBlock1{
+  width: 600px;
+  height: 80px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.rightSecondBlock2{
+  width: 600px;
+  height: 80px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.thirdBlock {
+  width: 1280px;
+  padding: 15px; /* Поля */
+  background: #FAEBD7; /* Цвет фона */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.centerThirdBlock{
+  display: inline-flex;
+  width: 1000px;
+}
+.finalBlock {
+  border: 1px solid black; /* Параметры рамки */
+  display: flex;
+  justify-content: space-between;
+  width: 1300px;
+  height: 200px;
+}
+.categoriesImportant {
+  border: 1px solid black; /* Параметры рамки */
+  display: flex;
+  width: 180px;
+  height: 200px;
+  justify-content: center;
+}
+.gradationImportant{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  font-size: 25px;
+}
+.finalBlock {
+  margin-bottom: 40px;
+}
+.toDoBlock {
+  border: 1px solid black; /* Параметры рамки */
+  padding: 30px 30px 10px 30px; /* Поля */
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  width: 1180px;
+  height: 160px;
+}
+.toDoText {
+  font-size: 25px;
+}
+
+.rightButtons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.buttonYes {
+  margin-bottom: 40px;
+}
+.buttonNo {
+  margin-bottom: 40px;
+}
+.greenYes {
+  background: #32CD32;
+  width: 1300px;
+  height: 200px;
+  border: 2px solid; /* Параметры рамки */
+  margin-bottom: 50px;
+}
+.redNo {
+  background: #CD5C5C;
+  width: 1300px;
+  height: 200px;
+  border: 2px solid;
+  margin-bottom: 50px;
+}
